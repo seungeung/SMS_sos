@@ -1,0 +1,316 @@
+TSMS_sos
+v4
+r1
+cCheck dependencies
+cCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/SMS_sos.app/ResourceRules.plist
+cProcessInfoPlistFile /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/Info.plist SMS_sos/SMS_sos-Info.plist
+cProcessPCH /var/folders/pz/pz1Ej34HFdySnY8J46GW2k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMS_sos-Prefix-hbbfhnlebmjnxpdxmirbbfyzvfle/SMS_sos-Prefix.pch.pth SMS_sos/SMS_sos-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/main.o /Users/licongcong/Desktop/SMS_sos/SMS_sos/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/AppDelegate.o /Users/licongcong/Desktop/SMS_sos/SMS_sos/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/ViewController.o /Users/licongcong/Desktop/SMS_sos/SMS_sos/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/EditViewController.o /Users/licongcong/Desktop/SMS_sos/SMS_sos/EditViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/SMS_sos normal armv7
+cGenerateDSYMFile /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app.dSYM /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/SMS_sos
+cCopyStringsFile /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/en.lproj/InfoPlist.strings SMS_sos/en.lproj/InfoPlist.strings
+cCompileStoryboard /Users/licongcong/Desktop/SMS_sos/SMS_sos/en.lproj/MainStoryboard.storyboard
+cTouch /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app
+cCodeSign /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk
+c000000004F38A88B0000000000000154
+t1329113227
+s340
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
+c000000004E5C595800000000000001E5
+t1314675032
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+c000000004E7805440000000000110A50
+t1316488516
+s1116752
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
+c000000004E780943000000000012D550
+t1316489539
+s1234256
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004E72F28700000000003AB0A0
+t1316156039
+s3846304
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004E72F3440000000000529540
+t1316156228
+s5412160
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004E78098C00000000000AF270
+t1316489612
+s717424
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
+c000000004E7809A000000000000AEC60
+t1316489632
+s715872
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004E7808C7000000000078BE50
+t1316489415
+s7913040
+
+N/Users/licongcong/Desktop/SMS_sos/SMS_sos/AppDelegate.m
+c000000004F371F420000000000000833
+t1329012546
+s2099
+
+N/Users/licongcong/Desktop/SMS_sos/SMS_sos/EditViewController.m
+c000000004F386D920000000000000767
+t1329098130
+s1895
+
+N/Users/licongcong/Desktop/SMS_sos/SMS_sos/SMS_sos-Prefix.pch
+c000000004F371F42000000000000013D
+t1329012546
+s317
+
+N/Users/licongcong/Desktop/SMS_sos/SMS_sos/ViewController.m
+c000000004F373C0E00000000000003C3
+t1329019918
+s963
+
+N/Users/licongcong/Desktop/SMS_sos/SMS_sos/en.lproj/InfoPlist.strings
+c000000004F371F42000000000000002D
+t1329012546
+s45
+
+N/Users/licongcong/Desktop/SMS_sos/SMS_sos/en.lproj/MainStoryboard.storyboard
+c000000004F386BAD0000000000002516
+t1329097645
+s9494
+
+N/Users/licongcong/Desktop/SMS_sos/SMS_sos/main.m
+c000000004F371F420000000000000146
+t1329012546
+s326
+
+N/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app
+t2
+s0
+
+N/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app.dSYM
+t2
+s0
+
+N/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/Info.plist
+t2
+s0
+
+N/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/PkgInfo
+t2
+s0
+
+N/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/ResourceRules.plist
+t2
+s0
+
+N/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/SMS_sos
+t2
+s0
+
+N/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/en.lproj/MainStoryboard.storyboardc
+t2
+s0
+
+N/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/AppDelegate.o
+t2
+s0
+
+N/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/EditViewController.o
+t2
+s0
+
+N/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/SMS_sos.LinkFileList
+c000000004F38B2FA00000000000001DB
+t1329115898
+s475
+
+N/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/ViewController.o
+t2
+s0
+
+N/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/var/folders/pz/pz1Ej34HFdySnY8J46GW2k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMS_sos-Prefix-hbbfhnlebmjnxpdxmirbbfyzvfle/SMS_sos-Prefix.pch.pth
+t2
+s0
+
+NSMS_sos/SMS_sos-Info.plist
+c000000004F371F4200000000000004F2
+t1329012546
+s1266
+
+CBuild AST from /Users/licongcong/Desktop/SMS_sos/SMS_sos/AppDelegate.m
+r0
+
+CBuild AST from /Users/licongcong/Desktop/SMS_sos/SMS_sos/EditViewController.m
+r0
+
+CBuild AST from /Users/licongcong/Desktop/SMS_sos/SMS_sos/ViewController.m
+r0
+
+CBuild AST from /Users/licongcong/Desktop/SMS_sos/SMS_sos/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies11e4f479eae8b441^fdbe0b7aeae8b441^-194"[BWARN]Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer', 'iPhone Developer: Shen Ji (K7P4NEGG74)' -- 'iPhone Developer' will be used.1(21%IDEActivityLogMessage2@186"Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer', 'iPhone Developer: Shen Ji (K7P4NEGG74)' -- 'iPhone Developer' will be used.-350808698#18446744073709551615#0#-1#-----0#1#0#--18"Check dependencies36"6ADAD590-138F-4C0A-BAAB-19ABA7734683-
+
+CCodeSign /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app
+s350808705.962891
+e350808707.828495
+r1
+xCodeSign
+x/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"CodeSign build/Debug-iphoneos/SMS_sos.appf696f681eae8b441^d219d483eae8b441^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/0000000000000000^538"CodeSign build/Debug-iphoneos/SMS_sos.app    cd /Users/licongcong/Desktop/SMS_sos    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign "iPhone Developer" --resource-rules=/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/ResourceRules.plist /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app36"797848DF-D965-4198-9618-2F1CC1EC2E78-
+
+CCompileC build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/AppDelegate.o /Users/licongcong/Desktop/SMS_sos/SMS_sos/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350808701.840196
+e350808702.012154
+r1
+xCompileC
+xbuild/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/AppDelegate.o
+x/Users/licongcong/Desktop/SMS_sos/SMS_sos/AppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/licongcong/Desktop/SMS_sos/SMS_sos/AppDelegate.m9f3dd77deae8b441^4b1e037eeae8b441^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/licongcong/Desktop/SMS_sos/SMS_sos/AppDelegate.m0000000000000000^2401"CompileC build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/AppDelegate.o SMS_sos/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/licongcong/Desktop/SMS_sos    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-generated-files.hmap -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-own-target-headers.hmap -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-all-target-headers.hmap -iquote /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-project-headers.hmap -I/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/include -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/DerivedSources/armv7 -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/DerivedSources -F/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos -include /var/folders/pz/pz1Ej34HFdySnY8J46GW2k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMS_sos-Prefix-hbbfhnlebmjnxpdxmirbbfyzvfle/SMS_sos-Prefix.pch -MMD -MT dependencies -MF /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/AppDelegate.d -c /Users/licongcong/Desktop/SMS_sos/SMS_sos/AppDelegate.m -o /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/AppDelegate.o36"181AC9A0-4F9E-450B-A736-71DDB172D54E-
+
+CCompileC build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/EditViewController.o /Users/licongcong/Desktop/SMS_sos/SMS_sos/EditViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350808702.013594
+e350808702.222512
+r1
+xCompileC
+xbuild/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/EditViewController.o
+x/Users/licongcong/Desktop/SMS_sos/SMS_sos/EditViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/licongcong/Desktop/SMS_sos/SMS_sos/EditViewController.m2c9d037eeae8b441^94f8387eeae8b441^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/licongcong/Desktop/SMS_sos/SMS_sos/EditViewController.m0000000000000000^2436"CompileC build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/EditViewController.o SMS_sos/EditViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/licongcong/Desktop/SMS_sos    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-generated-files.hmap -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-own-target-headers.hmap -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-all-target-headers.hmap -iquote /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-project-headers.hmap -I/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/include -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/DerivedSources/armv7 -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/DerivedSources -F/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos -include /var/folders/pz/pz1Ej34HFdySnY8J46GW2k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMS_sos-Prefix-hbbfhnlebmjnxpdxmirbbfyzvfle/SMS_sos-Prefix.pch -MMD -MT dependencies -MF /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/EditViewController.d -c /Users/licongcong/Desktop/SMS_sos/SMS_sos/EditViewController.m -o /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/EditViewController.o36"064F8ADC-44FD-45F9-8679-5DB0D4AE5264-
+
+CCompileC build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/ViewController.o /Users/licongcong/Desktop/SMS_sos/SMS_sos/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350808701.968766
+e350808702.374600
+r1
+xCompileC
+xbuild/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/ViewController.o
+x/Users/licongcong/Desktop/SMS_sos/SMS_sos/ViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/licongcong/Desktop/SMS_sos/SMS_sos/ViewController.mfb23f87deae8b441^c0e75f7eeae8b441^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/licongcong/Desktop/SMS_sos/SMS_sos/ViewController.m0000000000000000^2416"CompileC build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/ViewController.o SMS_sos/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/licongcong/Desktop/SMS_sos    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-generated-files.hmap -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-own-target-headers.hmap -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-all-target-headers.hmap -iquote /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-project-headers.hmap -I/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/include -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/DerivedSources/armv7 -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/DerivedSources -F/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos -include /var/folders/pz/pz1Ej34HFdySnY8J46GW2k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMS_sos-Prefix-hbbfhnlebmjnxpdxmirbbfyzvfle/SMS_sos-Prefix.pch -MMD -MT dependencies -MF /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/ViewController.d -c /Users/licongcong/Desktop/SMS_sos/SMS_sos/ViewController.m -o /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/ViewController.o36"9BB81433-0B65-4E75-B192-565B42EC00EC-
+
+CCompileC build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/main.o /Users/licongcong/Desktop/SMS_sos/SMS_sos/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350808701.839839
+e350808701.967430
+r1
+xCompileC
+xbuild/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/main.o
+x/Users/licongcong/Desktop/SMS_sos/SMS_sos/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Users/licongcong/Desktop/SMS_sos/SMS_sos/main.mee27d77deae8b441^65abf77deae8b441^---0#0#0#-19%DVTDocumentLocation2@64"file://localhost/Users/licongcong/Desktop/SMS_sos/SMS_sos/main.m0000000000000000^2366"CompileC build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/main.o SMS_sos/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/licongcong/Desktop/SMS_sos    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-generated-files.hmap -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-own-target-headers.hmap -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-all-target-headers.hmap -iquote /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-project-headers.hmap -I/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/include -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/DerivedSources/armv7 -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/DerivedSources -F/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos -include /var/folders/pz/pz1Ej34HFdySnY8J46GW2k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMS_sos-Prefix-hbbfhnlebmjnxpdxmirbbfyzvfle/SMS_sos-Prefix.pch -MMD -MT dependencies -MF /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/main.d -c /Users/licongcong/Desktop/SMS_sos/SMS_sos/main.m -o /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/main.o36"D9ECAEA5-8E56-4211-B9DD-D1A57B7058DB-
+
+CCompileStoryboard /Users/licongcong/Desktop/SMS_sos/SMS_sos/en.lproj/MainStoryboard.storyboard
+s350808702.751683
+e350808705.892526
+r1
+xCompileStoryboard
+x/Users/licongcong/Desktop/SMS_sos/SMS_sos/en.lproj/MainStoryboard.storyboard
+o/* com.apple.ibtool.document.warnings */
+o/Users/licongcong/Desktop/SMS_sos/SMS_sos/en.lproj/MainStoryboard.storyboard:2ST-ab-2Qh: warning: Prototype table cells must have reuse identifiers [9]
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"CompileStoryboard SMS_sos/en.lproj/MainStoryboard.storyboardb684c07eeae8b441^8e91e481eae8b441^-193"/* com.apple.ibtool.document.warnings *//Users/licongcong/Desktop/SMS_sos/SMS_sos/en.lproj/MainStoryboard.storyboard:2ST-ab-2Qh: warning: Prototype table cells must have reuse identifiers [9]1(21%IDEActivityLogMessage2@49"Prototype table cells must have reuse identifiers-350808705#18446744073709551615#0#-1#-23%DVTTextDocumentLocation3@92"file://localhost/Users/licongcong/Desktop/SMS_sos/SMS_sos/en.lproj/MainStoryboard.storyboard0000000000000000^1#18446744073709551615#1#18446744073709551615#18446744073709551615#0#25"Unsupported Configuration--0#0#0#-19%DVTDocumentLocation4@92"file://localhost/Users/licongcong/Desktop/SMS_sos/SMS_sos/en.lproj/MainStoryboard.storyboard0000000000000000^696"CompileStoryboard SMS_sos/en.lproj/MainStoryboard.storyboard    cd /Users/licongcong/Desktop/SMS_sos    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 5.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/en.lproj/MainStoryboard.storyboardc /Users/licongcong/Desktop/SMS_sos/SMS_sos/en.lproj/MainStoryboard.storyboard --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"28D48147-42E4-46C2-89DC-F68D517DF1EB-
+
+CCopyStringsFile /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/en.lproj/InfoPlist.strings SMS_sos/en.lproj/InfoPlist.strings
+s350808702.751061
+e350808702.827675
+r1
+xCopyStringsFile
+x/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/en.lproj/InfoPlist.strings
+xSMS_sos/en.lproj/InfoPlist.strings
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Copy SMS_sos/en.lproj/InfoPlist.strings895cc07eeae8b441^f8e2d37eeae8b441^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/licongcong/Desktop/SMS_sos/SMS_sos/en.lproj/InfoPlist.strings0000000000000000^480"CopyStringsFile build/Debug-iphoneos/SMS_sos.app/en.lproj/InfoPlist.strings SMS_sos/en.lproj/InfoPlist.strings    cd /Users/licongcong/Desktop/SMS_sos    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/en.lproj -- SMS_sos/en.lproj/InfoPlist.strings36"37971097-7848-426F-BDDC-686E7ADAEF47-
+
+CCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/SMS_sos.app/ResourceRules.plist
+s350808698.051305
+e350808698.098399
+r1
+xCpResource
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
+xbuild/Debug-iphoneos/SMS_sos.app/ResourceRules.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/Debug-iphoneos/SMS_sos.app/ResourceRules.plist11390d7aeae8b441^1058197aeae8b441^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/ResourceRules.plist00f8940fdcffdf42^588"CpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/SMS_sos.app/ResourceRules.plist    cd /Users/licongcong/Desktop/SMS_sos    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app36"F1316712-AA64-4D8C-BBE9-95D7A496227A-
+
+CGenerateDSYMFile /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app.dSYM /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/SMS_sos
+s350808702.628192
+e350808702.748339
+r1
+xGenerateDSYMFile
+x/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app.dSYM
+x/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/SMS_sos
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Generating /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app.dSYM8ae7a07eeae8b441^d994bf7eeae8b441^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app.dSYM00f8940fdcffdf42^443"GenerateDSYMFile build/Debug-iphoneos/SMS_sos.app.dSYM build/Debug-iphoneos/SMS_sos.app/SMS_sos    cd /Users/licongcong/Desktop/SMS_sos    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/SMS_sos -o /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app.dSYM36"D40A01C6-5E8A-4509-AD5F-3F33B8898CC4-
+
+CLd /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/SMS_sos normal armv7
+s350808702.376617
+e350808702.626848
+r1
+xLd
+x/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/SMS_sos
+xnormal
+xarmv7
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Link /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/SMS_sosd788607eeae8b441^c590a07eeae8b441^---0#0#0#--950"Ld build/Debug-iphoneos/SMS_sos.app/SMS_sos normal armv7    cd /Users/licongcong/Desktop/SMS_sos    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -L/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos -F/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos -filelist /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/Objects-normal/armv7/SMS_sos.LinkFileList -dead_strip -fobjc-arc -miphoneos-version-min=5.0 -framework AddressBookUI -framework AddressBook -framework MapKit -framework MessageUI -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/SMS_sos36"DC8161DC-01F0-43EC-8B2B-5B11B4FE2644-
+
+CProcessInfoPlistFile /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/Info.plist SMS_sos/SMS_sos-Info.plist
+s350808698.051428
+e350808698.147309
+r1
+xProcessInfoPlistFile
+x/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/Info.plist
+xSMS_sos/SMS_sos-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection34"Process SMS_sos/SMS_sos-Info.plist9b3c0d7aeae8b441^7cb7257aeae8b441^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/licongcong/Desktop/SMS_sos/SMS_sos/SMS_sos-Info.plist0000000000000000^642"ProcessInfoPlistFile build/Debug-iphoneos/SMS_sos.app/Info.plist SMS_sos/SMS_sos-Info.plist    cd /Users/licongcong/Desktop/SMS_sos    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility SMS_sos/SMS_sos-Info.plist -genpkginfo /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/ResourceRules.plist -o /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app/Info.plist36"92E45FA0-1E98-4B1C-9FB5-EBA6F8FE9AC5-
+
+CProcessPCH /Users/licongcong/Library/Developer/Xcode/DerivedData/SMS_sos-absqhnvytnrrjmalnfcxemjrnxaq/Index/PrecompiledHeaders/SMS_sos-Prefix-epikzexhjbwiebbckpjagstdwhli_ast/SMS_sos-Prefix.pch.pth SMS_sos/SMS_sos-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/pz/pz1Ej34HFdySnY8J46GW2k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMS_sos-Prefix-hbbfhnlebmjnxpdxmirbbfyzvfle/SMS_sos-Prefix.pch.pth SMS_sos/SMS_sos-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350808698.150608
+e350808701.838227
+r1
+xProcessPCH
+x/var/folders/pz/pz1Ej34HFdySnY8J46GW2k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMS_sos-Prefix-hbbfhnlebmjnxpdxmirbbfyzvfle/SMS_sos-Prefix.pch.pth
+xSMS_sos/SMS_sos-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile SMS_sos/SMS_sos-Prefix.pch12de267aeae8b441^3598d67deae8b441^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/licongcong/Desktop/SMS_sos/SMS_sos/SMS_sos-Prefix.pch0000000000000000^2423"ProcessPCH /var/folders/pz/pz1Ej34HFdySnY8J46GW2k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMS_sos-Prefix-hbbfhnlebmjnxpdxmirbbfyzvfle/SMS_sos-Prefix.pch.pth SMS_sos/SMS_sos-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/licongcong/Desktop/SMS_sos    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-generated-files.hmap -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-own-target-headers.hmap -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-all-target-headers.hmap -iquote /Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/SMS_sos-project-headers.hmap -I/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/include -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/DerivedSources/armv7 -I/Users/licongcong/Desktop/SMS_sos/build/SMS_sos.build/Debug-iphoneos/SMS_sos.build/DerivedSources -F/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos -c /Users/licongcong/Desktop/SMS_sos/SMS_sos/SMS_sos-Prefix.pch -o /var/folders/pz/pz1Ej34HFdySnY8J46GW2k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMS_sos-Prefix-hbbfhnlebmjnxpdxmirbbfyzvfle/SMS_sos-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/pz/pz1Ej34HFdySnY8J46GW2k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMS_sos-Prefix-hbbfhnlebmjnxpdxmirbbfyzvfle/SMS_sos-Prefix.pch.d36"AC6EF22B-B4B1-43FF-9BC0-453469DE7439-
+
+CTouch /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app
+s350808705.896344
+e350808705.960365
+r1
+xTouch
+x/Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Touch /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app4392e581eae8b441^4eecf581eae8b441^---0#0#0#--293"Touch build/Debug-iphoneos/SMS_sos.app    cd /Users/licongcong/Desktop/SMS_sos    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/licongcong/Desktop/SMS_sos/build/Debug-iphoneos/SMS_sos.app36"CE0F7B0D-CDD0-4915-97F7-88B7AF746DA8-
+
