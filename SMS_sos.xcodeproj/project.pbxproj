@@ -51,6 +51,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		234FBFD416A0333600044E84 /* config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_types.h; sourceTree = "<group>"; };
+		234FBFD516A0333600044E84 /* ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg.h; sourceTree = "<group>"; };
+		234FBFD616A0333600044E84 /* os_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os_types.h; sourceTree = "<group>"; };
+		234FBFD816A0333600044E84 /* speex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex.h; sourceTree = "<group>"; };
+		234FBFD916A0333600044E84 /* speex_bits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_bits.h; sourceTree = "<group>"; };
+		234FBFDA16A0333600044E84 /* speex_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_buffer.h; sourceTree = "<group>"; };
+		234FBFDB16A0333600044E84 /* speex_callbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_callbacks.h; sourceTree = "<group>"; };
+		234FBFDC16A0333600044E84 /* speex_config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_config_types.h; sourceTree = "<group>"; };
+		234FBFDD16A0333600044E84 /* speex_echo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_echo.h; sourceTree = "<group>"; };
+		234FBFDE16A0333600044E84 /* speex_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_header.h; sourceTree = "<group>"; };
+		234FBFDF16A0333600044E84 /* speex_jitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_jitter.h; sourceTree = "<group>"; };
+		234FBFE016A0333600044E84 /* speex_preprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_preprocess.h; sourceTree = "<group>"; };
+		234FBFE116A0333600044E84 /* speex_resampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_resampler.h; sourceTree = "<group>"; };
+		234FBFE216A0333600044E84 /* speex_stereo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_stereo.h; sourceTree = "<group>"; };
+		234FBFE316A0333600044E84 /* speex_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_types.h; sourceTree = "<group>"; };
 		234FBFE416A0335500044E84 /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libogg.a; sourceTree = "<group>"; };
 		234FBFE516A0335500044E84 /* libspeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libspeex.a; sourceTree = "<group>"; };
 		234FBFE616A0335500044E84 /* libspeexdsp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libspeexdsp.a; sourceTree = "<group>"; };
@@ -149,6 +164,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		234FBFD116A0330B00044E84 /* Speex */ = {
+			isa = PBXGroup;
+			children = (
+				234FBFD316A0333600044E84 /* ogg */,
+				234FBFD716A0333600044E84 /* speex */,
+			);
+			name = Speex;
+			sourceTree = "<group>";
+		};
+		234FBFD316A0333600044E84 /* ogg */ = {
+			isa = PBXGroup;
+			children = (
+				234FBFD416A0333600044E84 /* config_types.h */,
+				234FBFD516A0333600044E84 /* ogg.h */,
+				234FBFD616A0333600044E84 /* os_types.h */,
+			);
+			path = ogg;
+			sourceTree = "<group>";
+		};
+		234FBFD716A0333600044E84 /* speex */ = {
+			isa = PBXGroup;
+			children = (
+				234FBFD816A0333600044E84 /* speex.h */,
+				234FBFD916A0333600044E84 /* speex_bits.h */,
+				234FBFDA16A0333600044E84 /* speex_buffer.h */,
+				234FBFDB16A0333600044E84 /* speex_callbacks.h */,
+				234FBFDC16A0333600044E84 /* speex_config_types.h */,
+				234FBFDD16A0333600044E84 /* speex_echo.h */,
+				234FBFDE16A0333600044E84 /* speex_header.h */,
+				234FBFDF16A0333600044E84 /* speex_jitter.h */,
+				234FBFE016A0333600044E84 /* speex_preprocess.h */,
+				234FBFE116A0333600044E84 /* speex_resampler.h */,
+				234FBFE216A0333600044E84 /* speex_stereo.h */,
+				234FBFE316A0333600044E84 /* speex_types.h */,
+			);
+			path = speex;
+			sourceTree = "<group>";
+		};
 		E494C7E1153717D70020FDFB /* WebService */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +305,7 @@
 		E4ECEA5114E756C200C0D57F /* SMS_sos */ = {
 			isa = PBXGroup;
 			children = (
+				234FBFD116A0330B00044E84 /* Speex */,
 				E4EBEF7F1587988000007671 /* BASE64 */,
 				E494C7E1153717D70020FDFB /* WebService */,
 				E45E7665151C5392009D1746 /* NSTimerController.h */,
@@ -458,7 +512,6 @@
 		E4ECEA6614E756C200C0D57F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
 				DEAD_CODE_STRIPPING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,8 +519,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMS_sos/SMS_sos-Prefix.pch";
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/SMS_sos/**";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
 				INFOPLIST_FILE = "SMS_sos/SMS_sos-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -485,7 +537,6 @@
 		E4ECEA6714E756C200C0D57F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
 				DEAD_CODE_STRIPPING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,8 +544,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMS_sos/SMS_sos-Prefix.pch";
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/SMS_sos/**";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
 				INFOPLIST_FILE = "SMS_sos/SMS_sos-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
