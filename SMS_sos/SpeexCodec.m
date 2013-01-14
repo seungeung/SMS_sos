@@ -216,7 +216,7 @@ NSData *EncodePCMToRawSpeex(char *PCMdata, int maxLen,int nChannels, int nBitsPe
     short speech[FRAME_SIZE];
     int byte_counter, frames = 0, bytes = 0;
     
-    float input[FRAME_SIZE];
+    spx_int16_t input[FRAME_SIZE];
     char speexFrame[MAX_NB_BYTES];
 
     int tmp = 1;// bps?
@@ -257,7 +257,7 @@ NSData *EncodePCMToRawSpeex(char *PCMdata, int maxLen,int nChannels, int nBitsPe
 		frames++;
         
         speex_bits_reset(&bits);
-        speex_encode(encode_state, input, &bits);
+        speex_encode_int(encode_state, input, &bits);
         
         byte_counter = speex_bits_write(&bits, speexFrame, MAX_NB_BYTES);
         bytes += byte_counter;
@@ -330,7 +330,7 @@ NSData *DecodeSpeexToWAVE(NSData *data)
     int frames = 0;
     
     short pcmFrame[FRAME_SIZE];
-    float output[FRAME_SIZE];
+    spx_int16_t output[FRAME_SIZE];
     
     int tmp = 1;
     void *dec_state = speex_decoder_init(&speex_nb_mode);
@@ -346,7 +346,7 @@ NSData *DecodeSpeexToWAVE(NSData *data)
         }
         
         speex_bits_read_from(&bits, buf, nbBytes);
-        speex_decode(dec_state, &bits, output);
+        speex_decode_int(dec_state, &bits, output);
         
         for (int i = 0; i < FRAME_SIZE; i++) {
             pcmFrame[i] = output[i];
