@@ -221,7 +221,7 @@
     NSMutableDictionary* recordSetting = [[NSMutableDictionary alloc] init];
     [recordSetting setValue :[NSNumber numberWithInt:kAudioFormatMPEG4AAC] forKey:AVFormatIDKey];
     [recordSetting setValue:[NSNumber numberWithFloat:8000.0f] forKey:AVSampleRateKey]; 
-    [recordSetting setValue:[NSNumber numberWithInt:2] forKey:AVNumberOfChannelsKey];
+    [recordSetting setValue:[NSNumber numberWithInt:1] forKey:AVNumberOfChannelsKey];
     
     
     recorder =[[AVAudioRecorder alloc] initWithURL:tmpFile settings:recordSetting error:nil];

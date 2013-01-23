@@ -53,7 +53,7 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
     
     self.mapView.showsUserLocation = YES;
     
-    
+    NSLog(@"%@",[CLLocationManager authorizationStatus]);
     if ([CLLocationManager locationServicesEnabled]) {
         self.locManager = [[CLLocationManager alloc] init];
         self.locManager.delegate = self;
@@ -263,13 +263,17 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
 -(IBAction)reloadLocation:(id)sender
 {
     [self.locManager startUpdatingLocation];
+    [mapView setCenterCoordinate:locManager.location.coordinate animated:YES];
+    self.accuracy.text = [NSString stringWithFormat:@"%f,%f",locManager.location.coordinate.latitude,locManager.location.coordinate.longitude];
+   // self.mapView.center.x =self.locManager.location.coordinate.latitude;
+   
     
-    NSMutableArray *tmpArray = [[NSMutableArray alloc] initWithObjects:self.accuracy.text,@"test", nil];
+//    NSMutableArray *tmpArray = [[NSMutableArray alloc] initWithObjects:self.accuracy.text,@"test", nil];
 
-    ASIHTTPRequest * request = [DataProvider getASISOAP11Request:nil webServiceFile:nil xmlNameSpace:nil webServiceName:nil wsParameters:tmpArray];
-    
-    [request setDelegate:self]; 
-    [request startAsynchronous];
+//    ASIHTTPRequest * request = [DataProvider getASISOAP11Request:nil webServiceFile:nil xmlNameSpace:nil webServiceName:nil wsParameters:tmpArray];
+//    
+//    [request setDelegate:self]; 
+//    [request startAsynchronous];
     
     
 }
@@ -306,7 +310,7 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
     
 //    self.geoHeXie = [MSearch MSearchWithKey:mapabcKey delegate:self];
     self.accuracy.text = [NSString stringWithFormat:@"%f,%f",newLocation.coordinate.latitude,newLocation.coordinate.longitude];
-    
+    [mapView setCenterCoordinate:locManager.location.coordinate animated:YES];
     
 //    NSLog(@"%@",geoHeXie);
     
