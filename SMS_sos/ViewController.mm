@@ -18,9 +18,11 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
 @synthesize latitude,longitude,accuracy;
 @synthesize tbrButton;
 @synthesize mapView;
+@synthesize annotationView;
 @synthesize addressArray;
 @synthesize adrArray;
 @synthesize locManager;
+@synthesize typeSeg;
 //@synthesize geoHeXie;
 //@synthesize poiXY;
 //@synthesize options;
@@ -51,8 +53,14 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
     
 //    经纬度坐标显示
     
- //   self.mapView.showsUserLocation = YES;
+   self.mapView.showsUserLocation = YES;
     mapView.delegate =self;
+
+    if (mapView.userLocationVisible == YES) {
+        CLLocationCoordinate2D clLoc = self.mapView.userLocation.location.coordinate;
+        // NSLog(@"%@",clLoc);
+        [mapView setCenterCoordinate:clLoc];
+    }
     
 
     
@@ -84,6 +92,10 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
     }
 
     
+    //segMentController
+    
+    [typeSeg addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
+    
 
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -93,6 +105,35 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     self.addressArray = nil;    
+}
+#pragma mark- Segment
+
+-(void)segmentAction:(UISegmentedControl *)Seg
+{
+    NSInteger integer= Seg.selectedSegmentIndex;
+    NSLog(@"%i",integer);
+    switch (integer) {
+        case 0:
+            [mapView setMapType:MKMapTypeStandard];
+            break;
+        case 1:
+            [mapView setMapType:MKMapTypeSatellite];
+            break;
+        case 2:
+            [mapView setMapType:MKMapTypeHybrid];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+#pragma mark - info
+
+-(IBAction)infoSelected:(id)sender
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Info" message:@"Bozinga" delegate:nil cancelButtonTitle:@"Touch me" otherButtonTitles:nil, nil];
+    [alert show];
 }
 
 #pragma mark - SMS
@@ -266,8 +307,13 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
 -(IBAction)reloadLocation:(id)sender
 {
     [self.locManager startUpdatingLocation];
+    if (mapView.userLocationVisible == YES) {
+        CLLocationCoordinate2D clLoc = self.mapView.userLocation.location.coordinate;
+      // NSLog(@"%@",clLoc);
+        [mapView setCenterCoordinate:clLoc];
+    }
 //    [mapView setCenterCoordinate:locManager.location.coordinate animated:YES];
-//    self.accuracy.text = [NSString stringWithFormat:@"%f,%f",locManager.location.coordinate.latitude,locManager.location.coordinate.longitude];
+    self.accuracy.text = [NSString stringWithFormat:@"GPS:%f,%f==\n地图:%f,%f",locManager.location.coordinate.latitude,locManager.location.coordinate.longitude,self.mapView.userLocation.location.coordinate.latitude,self.mapView.userLocation.location.coordinate.longitude];
  //   NSLog(@"%f,%f",self.mapView.userLocation.coordinate.latitude,
  //         self.mapView.userLocation.coordinate.longitude);
     
@@ -308,12 +354,11 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
-//    if ([[ViewController   sharedLocationManager] chinaShiftEnabled]) { 
-//        newLocation = [[ViewController sharedLocationManager] _applyChinaLocationShift:newLocation]; 
-//        if (newLocation == nil) return; 
-//    } 
-    
-    [mapView setCenterCoordinate:newLocation.coordinate animated:YES];
+    if (mapView.userLocationVisible == YES) {
+        CLLocationCoordinate2D clLoc = self.mapView.userLocation.location.coordinate;
+        // NSLog(@"%@",clLoc);
+        [mapView setCenterCoordinate:clLoc];
+    }
    
     
     

@@ -20,12 +20,15 @@
     IBOutlet UILabel *latitude;
     IBOutlet UILabel *longitude;
     IBOutlet UILabel *accuracy;
+    IBOutlet UISegmentedControl *typeSeg;
+
     
 //    toolbar
     IBOutlet UIToolbar *tbrButton;
     
 //    map
     IBOutlet MKMapView *mapView;
+    MKAnnotationView *annotationView;
 //    地址簿
     NSArray *addressArray;
     NSMutableArray *adrArray;
@@ -42,8 +45,10 @@
 @property (nonatomic,retain) UILabel *accuracy;
 
 @property (nonatomic,retain) UIToolbar *tbrButton;
+@property (nonatomic,retain) UISegmentedControl *typeSeg;
 
 @property (nonatomic,retain) MKMapView *mapView;
+@property (nonatomic,retain) MKAnnotationView *annotationView;
 @property (nonatomic,strong) NSArray *addressArray;
 @property (nonatomic,strong) NSMutableArray *adrArray;
 
