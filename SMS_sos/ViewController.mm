@@ -51,21 +51,24 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
     
 //    经纬度坐标显示
     
-    self.mapView.showsUserLocation = YES;
+ //   self.mapView.showsUserLocation = YES;
+    mapView.delegate =self;
     
-    NSLog(@"%@",[CLLocationManager authorizationStatus]);
+
+    
+   // NSLog(@"%@",[CLLocationManager authorizationStatus]);
     if ([CLLocationManager locationServicesEnabled]) {
         self.locManager = [[CLLocationManager alloc] init];
         self.locManager.delegate = self;
         self.locManager.desiredAccuracy = kCLLocationAccuracyBest;
-        self.locManager.distanceFilter = 1.0f;
+        self.locManager.distanceFilter = 100.0f;
         
         [self.locManager startUpdatingLocation];
         
         MKCoordinateSpan theSpan;
         //地图的范围 越小越精确
-        theSpan.latitudeDelta=0.05;
-        theSpan.longitudeDelta=0.05;
+        theSpan.latitudeDelta=0.01;
+        theSpan.longitudeDelta=0.01;
         MKCoordinateRegion theRegion;
         theRegion.center=[[locManager location] coordinate];
         theRegion.span=theSpan;
@@ -263,8 +266,12 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
 -(IBAction)reloadLocation:(id)sender
 {
     [self.locManager startUpdatingLocation];
-    [mapView setCenterCoordinate:locManager.location.coordinate animated:YES];
-    self.accuracy.text = [NSString stringWithFormat:@"%f,%f",locManager.location.coordinate.latitude,locManager.location.coordinate.longitude];
+//    [mapView setCenterCoordinate:locManager.location.coordinate animated:YES];
+//    self.accuracy.text = [NSString stringWithFormat:@"%f,%f",locManager.location.coordinate.latitude,locManager.location.coordinate.longitude];
+ //   NSLog(@"%f,%f",self.mapView.userLocation.coordinate.latitude,
+ //         self.mapView.userLocation.coordinate.longitude);
+    
+    
    // self.mapView.center.x =self.locManager.location.coordinate.latitude;
    
     
@@ -301,6 +308,15 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
+//    if ([[ViewController   sharedLocationManager] chinaShiftEnabled]) { 
+//        newLocation = [[ViewController sharedLocationManager] _applyChinaLocationShift:newLocation]; 
+//        if (newLocation == nil) return; 
+//    } 
+    
+    [mapView setCenterCoordinate:newLocation.coordinate animated:YES];
+   
+    
+    
     //    截图用：
 //    newLocation.coordinate.latitude = 39.10563200;
     
@@ -310,7 +326,7 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
     
 //    self.geoHeXie = [MSearch MSearchWithKey:mapabcKey delegate:self];
     self.accuracy.text = [NSString stringWithFormat:@"%f,%f",newLocation.coordinate.latitude,newLocation.coordinate.longitude];
-    [mapView setCenterCoordinate:locManager.location.coordinate animated:YES];
+  
     
 //    NSLog(@"%@",geoHeXie);
     

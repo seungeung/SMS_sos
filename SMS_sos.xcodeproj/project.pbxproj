@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230F193416B22565003B64B5 /* Pin location 128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 230F193316B22565003B64B5 /* Pin location 128x128.png */; };
 		234FBFE716A0335500044E84 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 234FBFE416A0335500044E84 /* libogg.a */; };
 		234FBFE816A0335500044E84 /* libspeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 234FBFE516A0335500044E84 /* libspeex.a */; };
 		234FBFE916A0335500044E84 /* libspeexdsp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 234FBFE616A0335500044E84 /* libspeexdsp.a */; };
 		238AB06D16A2A6880075B0B9 /* SpeexCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 238AB06C16A2A6880075B0B9 /* SpeexCodec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		23AFC0EC16AFDAE400174BE8 /* Locate 128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 23AFC0EB16AFDAE400174BE8 /* Locate 128x128.png */; };
 		E410C66F14F1EC5D004FDC8F /* AddressSelected.m in Sources */ = {isa = PBXBuildFile; fileRef = E410C66E14F1EC5D004FDC8F /* AddressSelected.m */; };
 		E45E765E151C5042009D1746 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45E765D151C5042009D1746 /* CoreAudio.framework */; };
 		E45E7661151C504B009D1746 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45E7660151C504B009D1746 /* AVFoundation.framework */; };
@@ -52,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230F193316B22565003B64B5 /* Pin location 128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pin location 128x128.png"; sourceTree = "<group>"; };
 		234FBFD416A0333600044E84 /* config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_types.h; sourceTree = "<group>"; };
 		234FBFD516A0333600044E84 /* ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg.h; sourceTree = "<group>"; };
 		234FBFD616A0333600044E84 /* os_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os_types.h; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		238AB06B16A2A6880075B0B9 /* SpeexCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeexCodec.h; sourceTree = "<group>"; };
 		238AB06C16A2A6880075B0B9 /* SpeexCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeexCodec.m; sourceTree = "<group>"; };
 		238AB06E16A2A6A50075B0B9 /* SpeexAllHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeexAllHeader.h; sourceTree = "<group>"; };
+		23AFC0EB16AFDAE400174BE8 /* Locate 128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locate 128x128.png"; sourceTree = "<group>"; };
 		E410C66D14F1EC5D004FDC8F /* AddressSelected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSelected.h; sourceTree = "<group>"; };
 		E410C66E14F1EC5D004FDC8F /* AddressSelected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSelected.m; sourceTree = "<group>"; };
 		E45E765D151C5042009D1746 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -336,6 +340,8 @@
 		E4ECEA5214E756C200C0D57F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				230F193316B22565003B64B5 /* Pin location 128x128.png */,
+				23AFC0EB16AFDAE400174BE8 /* Locate 128x128.png */,
 				E47B281B1588C3750034D187 /* icon.png */,
 				E4ECEA5314E756C200C0D57F /* SMS_sos-Info.plist */,
 				E4ECEA5414E756C200C0D57F /* InfoPlist.strings */,
@@ -402,6 +408,8 @@
 				E4ECEA5614E756C200C0D57F /* InfoPlist.strings in Resources */,
 				E4ECEA5F14E756C200C0D57F /* MainStoryboard.storyboard in Resources */,
 				E47B281C1588C3750034D187 /* icon.png in Resources */,
+				23AFC0EC16AFDAE400174BE8 /* Locate 128x128.png in Resources */,
+				230F193416B22565003B64B5 /* Pin location 128x128.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

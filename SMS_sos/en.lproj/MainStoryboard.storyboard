@@ -16,8 +16,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" mapType="standard" showsUserLocation="YES" id="t0Y-cm-smq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="373"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="098-88-CAq"/>
+                                </connections>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="XbQ-vg-dta">
                                 <rect key="frame" x="0.0" y="416" width="320" height="44"/>
@@ -44,35 +48,35 @@
                                 </items>
                             </toolbar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="当前位置经纬度" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="65Q-e9-9ay">
-                                <rect key="frame" x="97" y="375" width="210" height="40"/>
+                                <rect key="frame" x="94" y="365" width="210" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="nNS-Es-EKS">
-                                <rect key="frame" x="12" y="373" width="64" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ng8-Zh-g1W" userLabel="Refresh">
+                                <rect key="frame" x="14" y="365" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                                <state key="normal" title="upload">
-                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.03666681469641464" blue="0.054355408818816009" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="Locate 128x128.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="highlighted" image="Locate 128x128.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="reloadLocation:" destination="2" eventType="touchUpInside" id="mz4-BL-ueB"/>
+                                    <action selector="reloadLocation:" destination="2" eventType="touchUpInside" id="ItQ-OC-xZk"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.24705883860588074" green="0.29019609093666077" blue="0.31372550129890442" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <connections>
                         <outlet property="accuracy" destination="65Q-e9-9ay" id="jCI-6j-0W8"/>
-                        <outlet property="mapView" destination="t0Y-cm-smq" id="BHd-Rp-Iy2"/>
+                        <outlet property="mapView" destination="t0Y-cm-smq" id="mBc-1j-54U"/>
                         <outlet property="tbrButton" destination="XbQ-vg-dta" id="9P6-F6-YQp"/>
-                        <outlet property="view" destination="3" id="4Lu-Xg-G5u"/>
+                        <outlet property="view" destination="3" id="sY0-ki-L4V"/>
                     </connections>
                 </viewController>
             </objects>
@@ -198,6 +202,9 @@
             <point key="canvasLocation" x="438" y="52"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Locate 128x128.png" width="128" height="128"/>
+    </resources>
     <classes>
         <class className="AudioRecorderController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioRecorderController.h"/>

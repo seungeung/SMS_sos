@@ -14,7 +14,7 @@
 //#import "MSearch.h"
 #import "DataProvider.h"
 
-@interface ViewController : UIViewController<ASIHTTPRequestDelegate,UIAlertViewDelegate,MFMessageComposeViewControllerDelegate,addressArrayDelegate,CLLocationManagerDelegate>
+@interface ViewController : UIViewController<ASIHTTPRequestDelegate,UIAlertViewDelegate,MFMessageComposeViewControllerDelegate,addressArrayDelegate,CLLocationManagerDelegate,MKMapViewDelegate>
 {
 //    lable group
     IBOutlet UILabel *latitude;
@@ -55,5 +55,11 @@
 -(IBAction)showSMSPicker:(id)sender;
 -(IBAction)reloadLocation:(id)sender;
 -(void)geoRecode:(id)sender;
+
+
+//火星坐标私有API
+- (CLLocation*)_applyChinaLocationShift:(CLLocation*)arg;   
+- (BOOL)chinaShiftEnabled;   
++ (id)sharedLocationManager;
 
 @end

@@ -4,7 +4,7 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SMS_sos/AudioRecorderController.m"
@@ -21,25 +21,77 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SMS_sos/ViewController.mm"
-         timestampString = "379829184.943063"
+         timestampString = "380630527.418668"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "302"
-         endingLineNumber = "302"
+         startingLineNumber = "309"
+         endingLineNumber = "309"
          landmarkName = "-locationManager:didUpdateToLocation:fromLocation:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SMS_sos/ViewController.mm"
-         timestampString = "379845838.986519"
+         timestampString = "380630527.418668"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "56"
-         endingLineNumber = "56"
+         startingLineNumber = "59"
+         endingLineNumber = "59"
          landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SMS_sos/ViewController.mm"
+         timestampString = "380625460.465612"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "45"
+         endingLineNumber = "45"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SMS_sos/ViewController.mm"
+         timestampString = "380630527.418668"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "266"
+         endingLineNumber = "266"
+         landmarkName = "-reloadLocation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SMS_sos/ViewController.mm"
+         timestampString = "380630527.418668"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "271"
+         endingLineNumber = "271"
+         landmarkName = "-reloadLocation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SMS_sos/ViewController.mm"
+         timestampString = "380630645.495303"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "310"
+         endingLineNumber = "310"
+         landmarkName = "-locationManager:didUpdateToLocation:fromLocation:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
