@@ -36,11 +36,12 @@
      Content-Length: 251
      */
 //    if ([wsName isEqualToString:@"voice"]) {
-        NSString *strVoice = [wsParas objectAtIndex:1];
+        NSString *strVoice = [wsParas objectAtIndex:2];
 //    }
 //    else
 //    {
-    NSString *strLoc= [wsParas objectAtIndex:0];
+    NSString *strLoc = [wsParas objectAtIndex:1];
+    NSString *strUserID = [wsParas objectAtIndex:0];
 //    }
     
     //1、初始化SOAP消息体
@@ -49,14 +50,16 @@
                                @"<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">"
                                 "<soapenv:Header/>"
                                 "<soapenv:Body>"
-                                "<tem:Location>"
+                              "<tem:UserID>"
                               "<!--Optional:-->"
-                                "<tem:location>%@</tem:location>"
+                              "<tem:userId>%@</tem:userId>"
+                              "<!--Optional:-->"
+                              "<tem:location>%@</tem:location>"
                               "<!--Optional:-->"
                               "<tem:voice>%@</tem:voice>"
-                                "</tem:Location>"
+                              "</tem:UserID>"
                                 "</soapenv:Body>"
-                               "</soapenv:Envelope>",strLoc,strVoice];
+                               "</soapenv:Envelope>",strUserID,strLoc,strVoice];
                                 
 
 
@@ -69,8 +72,8 @@
     
     //以下对请求信息添加属性前四句是必有的，第五句是soap信息。
     [theRequest addRequestHeader:@"Accept-Encoding" value:@"gzip,deflate"];
-    [theRequest addRequestHeader:@"Content-Type" value:@"soapMsgBody"];
-    [theRequest addRequestHeader:@"SOAPAction" value:@"http://tempuri.org/Location"];
+    [theRequest addRequestHeader:@"Content-Type" value:@"text/xml;charset=UTF-8"];
+    [theRequest addRequestHeader:@"SOAPAction" value:@"http://tempuri.org/UserID"];
     
     [theRequest addRequestHeader:@"Content-Length" value:msgLength];
     [theRequest addRequestHeader:@"Host" value:HOST];

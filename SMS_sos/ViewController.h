@@ -13,6 +13,7 @@
 #import <CoreLocation/CoreLocation.h>
 //#import "MSearch.h"
 #import "DataProvider.h"
+#import "AudioRecorderController.h"
 
 @interface ViewController : UIViewController<ASIHTTPRequestDelegate,UIAlertViewDelegate,MFMessageComposeViewControllerDelegate,addressArrayDelegate,CLLocationManagerDelegate,MKMapViewDelegate>
 {

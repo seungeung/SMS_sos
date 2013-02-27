@@ -132,7 +132,7 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
 
 -(IBAction)infoSelected:(id)sender
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Info" message:@"Bozinga" delegate:nil cancelButtonTitle:@"Touch me" otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Info" message:@"Bozinga    \n copyright:Guzhe Tju" delegate:nil cancelButtonTitle:@"Touch me" otherButtonTitles:nil, nil];
     [alert show];
 }
 
@@ -186,7 +186,7 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
     
     picker.body = @"test";
     if (accuracy.text != nil) {
-        picker.body =   [NSString stringWithFormat:@"我在:%@附近(位置不精确)坐标%@,%@求帮助!",accuracy.text,self,latitude.text,self.longitude.text]; 
+        picker.body =   [NSString stringWithFormat:@"我在:%@附近(位置不精确)求帮助!",accuracy.text,self]; 
     }
 	
 	[self presentModalViewController:picker animated:YES];
@@ -313,20 +313,20 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
         [mapView setCenterCoordinate:clLoc];
     }
 //    [mapView setCenterCoordinate:locManager.location.coordinate animated:YES];
-    self.accuracy.text = [NSString stringWithFormat:@"GPS:%f,%f==\n地图:%f,%f",locManager.location.coordinate.latitude,locManager.location.coordinate.longitude,self.mapView.userLocation.location.coordinate.latitude,self.mapView.userLocation.location.coordinate.longitude];
- //   NSLog(@"%f,%f",self.mapView.userLocation.coordinate.latitude,
- //         self.mapView.userLocation.coordinate.longitude);
+    self.accuracy.text = [NSString stringWithFormat:@"GPS:%f,%f     地图:%f,%f",locManager.location.coordinate.latitude,locManager.location.coordinate.longitude,self.mapView.userLocation.location.coordinate.latitude,self.mapView.userLocation.location.coordinate.longitude];
+    NSLog(@"%@",self.accuracy.text);
     
-    
-   // self.mapView.center.x =self.locManager.location.coordinate.latitude;
+//    标注为经度纬度，百度地图接口为纬度经度，注意调换顺序
+    NSString *locString = [[NSString alloc] initWithFormat:@"%f,%f",locManager.location.coordinate.longitude,locManager.location.coordinate.latitude];
    
     
-//    NSMutableArray *tmpArray = [[NSMutableArray alloc] initWithObjects:self.accuracy.text,@"test", nil];
+    NSMutableArray *tmpArray = [[NSMutableArray alloc] initWithObjects:@"13516271116",locString,@"instead of voice file", nil];
 
-//    ASIHTTPRequest * request = [DataProvider getASISOAP11Request:nil webServiceFile:nil xmlNameSpace:nil webServiceName:nil wsParameters:tmpArray];
-//    
-//    [request setDelegate:self]; 
-//    [request startAsynchronous];
+    ASIHTTPRequest * request = [DataProvider getASISOAP11Request:nil webServiceFile:nil xmlNameSpace:nil webServiceName:nil wsParameters:tmpArray];
+    
+    [request setDelegate:self]; 
+    [request startAsynchronous];
+   
     
     
 }
