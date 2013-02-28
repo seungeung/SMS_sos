@@ -11,15 +11,18 @@
 #import <MessageUI/MessageUI.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
-//#import "MSearch.h"
+#import <AVFoundation/AVFoundation.h>
+#import <CoreAudio/CoreAudioTypes.h>
 #import "DataProvider.h"
-#import "AudioRecorderController.h"
+#import "Base64.h"
+//#import "AudioRecorderController.h"
 
-@interface ViewController : UIViewController<ASIHTTPRequestDelegate,UIAlertViewDelegate,MFMessageComposeViewControllerDelegate,addressArrayDelegate,CLLocationManagerDelegate,MKMapViewDelegate>
+
+@interface ViewController : UIViewController<ASIHTTPRequestDelegate,UIAlertViewDelegate,MFMessageComposeViewControllerDelegate,addressArrayDelegate,CLLocationManagerDelegate,MKMapViewDelegate,AVAudioRecorderDelegate>
 {
 //    lable group
-    IBOutlet UILabel *latitude;
-    IBOutlet UILabel *longitude;
+   // IBOutlet UILabel *latitude;
+   // IBOutlet UILabel *longitude;
     IBOutlet UILabel *accuracy;
     IBOutlet UISegmentedControl *typeSeg;
 
@@ -40,9 +43,9 @@
 //    MLONLAT poiXY;
 }
 
-@property (nonatomic,retain) UILabel *latitude;
+//@property (nonatomic,retain) UILabel *latitude;
  
-@property (nonatomic,retain) UILabel *longitude;
+//@property (nonatomic,retain) UILabel *longitude;
 @property (nonatomic,retain) UILabel *accuracy;
 
 @property (nonatomic,retain) UIToolbar *tbrButton;
@@ -56,6 +59,8 @@
 @property (strong) CLLocationManager *locManager;
 //@property (nonatomic,strong) MSearch *geoHeXie;
 //@property MLONLAT poiXY;
+
+@property (nonatomic, retain) NSString *PCMFilePath;
 
 -(void)displaySMSComposerSheet;
 -(IBAction)showSMSPicker:(id)sender;

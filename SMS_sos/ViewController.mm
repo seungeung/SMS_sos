@@ -7,15 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "SpeexCodec.h"
 
 static NSString *kAddressName = @"addressNameKey";
 static NSString *kAddressNumber = @"addressNumberKey";
 
-static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c9e4a36ca9ca54799075ef376d0835e0";
+//static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c9e4a36ca9ca54799075ef376d0835e0";
 
 @implementation ViewController
 
-@synthesize latitude,longitude,accuracy;
+@synthesize accuracy;
 @synthesize tbrButton;
 @synthesize mapView;
 @synthesize annotationView;
@@ -26,7 +27,7 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
 //@synthesize geoHeXie;
 //@synthesize poiXY;
 //@synthesize options;
-
+@synthesize PCMFilePath = _PCMFilePath;
 
 
 #pragma mark - View lifecycle
@@ -302,6 +303,44 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
     [self dismissModalViewControllerAnimated:YES];
 }
 
+#pragma mark - audio&location upload
+-(IBAction)audioUpload:(id)sender
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"caf"];
+    NSData *PCMData = [NSData dataWithContentsOfFile:filePath];
+    NSLog(@"---------%d", [PCMData length]);
+    
+   NSData *SpeexData = EncodeWAVEToSpeex(PCMData, 2, 16);
+   // NSLog(@"---------%d", [SpeexData length]);
+   // SpeexHeader *header = (SpeexHeader *)[SpeexData bytes];
+   // CalculatePlayTime(SpeexData, header->reserved1);
+    NSString *strVoice = [Base64 data2String:PCMData];
+    NSLog(@"%@",strVoice.length);
+    NSMutableArray *tmpArray = [[NSMutableArray alloc] initWithObjects:@"13516271116",@"39.107040,117.171677",strVoice, nil];
+    
+    ASIHTTPRequest * request = [DataProvider getASISOAP11Request:nil webServiceFile:nil xmlNameSpace:nil webServiceName:nil wsParameters:tmpArray];
+    
+    [request setDelegate:self]; 
+    [request startAsynchronous];
+}
+-(IBAction)locationUpload:(id)sender
+{
+    //    标注为经度纬度，百度地图接口为纬度经度，注意调换顺序
+    NSString *locString = [[NSString alloc] initWithFormat:@"%f,%f",locManager.location.coordinate.longitude,locManager.location.coordinate.latitude];
+    
+    
+    if ([locString isEqualToString:@"0.000000,0.000000"] ) {
+        return;
+    }
+    NSMutableArray *tmpArray = [[NSMutableArray alloc] initWithObjects:@"13516271116",locString,@"instead of voice file", nil];
+    
+    ASIHTTPRequest * request = [DataProvider getASISOAP11Request:nil webServiceFile:nil xmlNameSpace:nil webServiceName:nil wsParameters:tmpArray];
+    
+    [request setDelegate:self]; 
+    [request startAsynchronous];
+}
+
+
 #pragma mark - mapTools
 
 -(IBAction)reloadLocation:(id)sender
@@ -314,21 +353,10 @@ static NSString *mapabcKey = @"c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a7f10ecb2c
     }
 //    [mapView setCenterCoordinate:locManager.location.coordinate animated:YES];
     self.accuracy.text = [NSString stringWithFormat:@"GPS:%f,%f     地图:%f,%f",locManager.location.coordinate.latitude,locManager.location.coordinate.longitude,self.mapView.userLocation.location.coordinate.latitude,self.mapView.userLocation.location.coordinate.longitude];
-    NSLog(@"%@",self.accuracy.text);
+        
+        NSLog(@"%@",self.accuracy.text);
     
-//    标注为经度纬度，百度地图接口为纬度经度，注意调换顺序
-    NSString *locString = [[NSString alloc] initWithFormat:@"%f,%f",locManager.location.coordinate.longitude,locManager.location.coordinate.latitude];
-   
-    
-    NSMutableArray *tmpArray = [[NSMutableArray alloc] initWithObjects:@"13516271116",locString,@"instead of voice file", nil];
 
-    ASIHTTPRequest * request = [DataProvider getASISOAP11Request:nil webServiceFile:nil xmlNameSpace:nil webServiceName:nil wsParameters:tmpArray];
-    
-    [request setDelegate:self]; 
-    [request startAsynchronous];
-   
-    
-    
 }
 -(void)requestFinished:(ASIHTTPRequest *)request
 {

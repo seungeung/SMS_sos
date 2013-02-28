@@ -138,7 +138,7 @@
         
         [recorder stop];
         toggle = YES;
-        [timer  invalidate];
+       // [timer  invalidate];
         //        [timer invalidate];
         
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
@@ -187,7 +187,7 @@
         [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         [audioArray addObject:fullPath];
         
-        timer = [NSTimer scheduledTimerWithTimeInterval:8.0f target:self selector:@selector(recordFile:) userInfo:recorder repeats:NO];
+//        timer = [NSTimer scheduledTimerWithTimeInterval:8.0f target:self selector:@selector(recordFile:) userInfo:recorder repeats:NO];
         //        [timer fire];
 //        timer =[NSTimer scheduledTimerWithTimeInterval:<#(NSTimeInterval)#> invocation:<#(NSInvocation *)#> repeats:<#(BOOL)#>];
         
@@ -320,20 +320,32 @@
     
     NSURL*url = [NSURL fileURLWithPath:[audioArray objectAtIndex:count-1]];
     NSData *voiceData = [NSData dataWithContentsOfURL:url];
+    //Speex压缩
+    
+//    NSData *SpeexData = EncodeWAVEToSpeex(voiceData, 1, 16);
+//   // NSLog(@"---------%d", [SpeexData length]);
+//    SpeexHeader *header = (SpeexHeader *)[SpeexData bytes];
+//    CalculatePlayTime(SpeexData, header->reserved1);
+    
+  
+    
+    
+    
+    
     NSString *strVoice = [Base64 data2String:voiceData];
 //    NSString *currentPhoneNumber = [[NSUserDefaults standardUserDefaults] objectForKey:@"SBFormattedPhoneNumber"];
-    NSMutableArray *tmpArray = [[NSMutableArray alloc] initWithObjects:@"39.105632，117.1652065",strVoice, nil];
+    NSMutableArray *tmpArray = [[NSMutableArray alloc] initWithObjects:@"13516271116",@"39，117",strVoice, nil];
     
     
-    ASIHTTPRequest * request = [DataProvider getASISOAP11Request:nil webServiceFile:nil xmlNameSpace:nil webServiceName:@"vocie" wsParameters:tmpArray];
+    ASIHTTPRequest * request = [DataProvider getASISOAP11Request:nil webServiceFile:nil xmlNameSpace:nil webServiceName:nil wsParameters:tmpArray];
     
     [request setDelegate:self]; 
-//    [request startAsynchronous];
-    [request setUploadProgressDelegate:self];
-    request.showAccurateProgress = YES;
-    [queue addOperation:request];
- 
-    [queue go];
+    [request startAsynchronous];
+//    [request setUploadProgressDelegate:self];
+//    request.showAccurateProgress = YES;
+//    [queue addOperation:request];
+// 
+//    [queue go];
     
 
 }

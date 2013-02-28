@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		230F193416B22565003B64B5 /* Pin location 128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 230F193316B22565003B64B5 /* Pin location 128x128.png */; };
-		234FBFE716A0335500044E84 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 234FBFE416A0335500044E84 /* libogg.a */; };
-		234FBFE816A0335500044E84 /* libspeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 234FBFE516A0335500044E84 /* libspeex.a */; };
-		234FBFE916A0335500044E84 /* libspeexdsp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 234FBFE616A0335500044E84 /* libspeexdsp.a */; };
-		238AB06D16A2A6880075B0B9 /* SpeexCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 238AB06C16A2A6880075B0B9 /* SpeexCodec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		23AFC0EC16AFDAE400174BE8 /* Locate 128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 23AFC0EB16AFDAE400174BE8 /* Locate 128x128.png */; };
+		23D3818016DE00BE0090F65F /* test.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23D3817F16DE00BE0090F65F /* test.caf */; };
+		23D3818316DE02B50090F65F /* audio.png in Resources */ = {isa = PBXBuildFile; fileRef = 23D3818116DE02B50090F65F /* audio.png */; };
+		23D3818416DE02B50090F65F /* loc upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 23D3818216DE02B50090F65F /* loc upload.png */; };
+		23D381CC16DF26460090F65F /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D381C916DF26460090F65F /* libogg.a */; };
+		23D381CD16DF26460090F65F /* libspeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D381CA16DF26460090F65F /* libspeex.a */; };
+		23D381CE16DF26460090F65F /* libspeexdsp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D381CB16DF26460090F65F /* libspeexdsp.a */; };
+		23D3820416DF2CE20090F65F /* SpeexCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D3820316DF2CE20090F65F /* SpeexCodec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		23D3820616DF31EF0090F65F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D3820516DF31EE0090F65F /* AVFoundation.framework */; };
+		23D3820816DF31FD0090F65F /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D3820716DF31FD0090F65F /* CoreAudio.framework */; };
 		E410C66F14F1EC5D004FDC8F /* AddressSelected.m in Sources */ = {isa = PBXBuildFile; fileRef = E410C66E14F1EC5D004FDC8F /* AddressSelected.m */; };
-		E45E765E151C5042009D1746 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45E765D151C5042009D1746 /* CoreAudio.framework */; };
-		E45E7661151C504B009D1746 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45E7660151C504B009D1746 /* AVFoundation.framework */; };
 		E45E7664151C50B5009D1746 /* AudioRecorderController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E7663151C50B5009D1746 /* AudioRecorderController.m */; };
 		E45E7667151C5393009D1746 /* NSTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E7666151C5392009D1746 /* NSTimerController.m */; };
 		E47B281C1588C3750034D187 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E47B281B1588C3750034D187 /* icon.png */; };
@@ -55,32 +58,35 @@
 
 /* Begin PBXFileReference section */
 		230F193316B22565003B64B5 /* Pin location 128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pin location 128x128.png"; sourceTree = "<group>"; };
-		234FBFD416A0333600044E84 /* config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_types.h; sourceTree = "<group>"; };
-		234FBFD516A0333600044E84 /* ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg.h; sourceTree = "<group>"; };
-		234FBFD616A0333600044E84 /* os_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os_types.h; sourceTree = "<group>"; };
-		234FBFD816A0333600044E84 /* speex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex.h; sourceTree = "<group>"; };
-		234FBFD916A0333600044E84 /* speex_bits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_bits.h; sourceTree = "<group>"; };
-		234FBFDA16A0333600044E84 /* speex_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_buffer.h; sourceTree = "<group>"; };
-		234FBFDB16A0333600044E84 /* speex_callbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_callbacks.h; sourceTree = "<group>"; };
-		234FBFDC16A0333600044E84 /* speex_config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_config_types.h; sourceTree = "<group>"; };
-		234FBFDD16A0333600044E84 /* speex_echo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_echo.h; sourceTree = "<group>"; };
-		234FBFDE16A0333600044E84 /* speex_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_header.h; sourceTree = "<group>"; };
-		234FBFDF16A0333600044E84 /* speex_jitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_jitter.h; sourceTree = "<group>"; };
-		234FBFE016A0333600044E84 /* speex_preprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_preprocess.h; sourceTree = "<group>"; };
-		234FBFE116A0333600044E84 /* speex_resampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_resampler.h; sourceTree = "<group>"; };
-		234FBFE216A0333600044E84 /* speex_stereo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_stereo.h; sourceTree = "<group>"; };
-		234FBFE316A0333600044E84 /* speex_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_types.h; sourceTree = "<group>"; };
-		234FBFE416A0335500044E84 /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libogg.a; sourceTree = "<group>"; };
-		234FBFE516A0335500044E84 /* libspeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libspeex.a; sourceTree = "<group>"; };
-		234FBFE616A0335500044E84 /* libspeexdsp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libspeexdsp.a; sourceTree = "<group>"; };
-		238AB06B16A2A6880075B0B9 /* SpeexCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeexCodec.h; sourceTree = "<group>"; };
-		238AB06C16A2A6880075B0B9 /* SpeexCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeexCodec.m; sourceTree = "<group>"; };
-		238AB06E16A2A6A50075B0B9 /* SpeexAllHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeexAllHeader.h; sourceTree = "<group>"; };
 		23AFC0EB16AFDAE400174BE8 /* Locate 128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locate 128x128.png"; sourceTree = "<group>"; };
+		23D3817F16DE00BE0090F65F /* test.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.caf; sourceTree = "<group>"; };
+		23D3818116DE02B50090F65F /* audio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audio.png; sourceTree = "<group>"; };
+		23D3818216DE02B50090F65F /* loc upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loc upload.png"; sourceTree = "<group>"; };
+		23D381C916DF26460090F65F /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg.a; path = SMS_sos/libogg.a; sourceTree = "<group>"; };
+		23D381CA16DF26460090F65F /* libspeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libspeex.a; path = SMS_sos/libspeex.a; sourceTree = "<group>"; };
+		23D381CB16DF26460090F65F /* libspeexdsp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libspeexdsp.a; path = SMS_sos/libspeexdsp.a; sourceTree = "<group>"; };
+		23D381E616DF26D10090F65F /* speex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex.h; sourceTree = "<group>"; };
+		23D381E716DF26D10090F65F /* speex_bits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_bits.h; sourceTree = "<group>"; };
+		23D381E816DF26D10090F65F /* speex_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_buffer.h; sourceTree = "<group>"; };
+		23D381E916DF26D10090F65F /* speex_callbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_callbacks.h; sourceTree = "<group>"; };
+		23D381EA16DF26D10090F65F /* speex_config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_config_types.h; sourceTree = "<group>"; };
+		23D381EB16DF26D10090F65F /* speex_echo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_echo.h; sourceTree = "<group>"; };
+		23D381EC16DF26D10090F65F /* speex_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_header.h; sourceTree = "<group>"; };
+		23D381ED16DF26D10090F65F /* speex_jitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_jitter.h; sourceTree = "<group>"; };
+		23D381EE16DF26D10090F65F /* speex_preprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_preprocess.h; sourceTree = "<group>"; };
+		23D381EF16DF26D10090F65F /* speex_resampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_resampler.h; sourceTree = "<group>"; };
+		23D381F016DF26D10090F65F /* speex_stereo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_stereo.h; sourceTree = "<group>"; };
+		23D381F116DF26D10090F65F /* speex_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_types.h; sourceTree = "<group>"; };
+		23D381F316DF26E10090F65F /* config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_types.h; sourceTree = "<group>"; };
+		23D381F416DF26E10090F65F /* ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg.h; sourceTree = "<group>"; };
+		23D381F516DF26E10090F65F /* os_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os_types.h; sourceTree = "<group>"; };
+		23D381F616DF26EF0090F65F /* SpeexAllHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeexAllHeader.h; sourceTree = "<group>"; };
+		23D3820216DF2CE20090F65F /* SpeexCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeexCodec.h; sourceTree = "<group>"; };
+		23D3820316DF2CE20090F65F /* SpeexCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeexCodec.m; sourceTree = "<group>"; };
+		23D3820516DF31EE0090F65F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		23D3820716DF31FD0090F65F /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		E410C66D14F1EC5D004FDC8F /* AddressSelected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSelected.h; sourceTree = "<group>"; };
 		E410C66E14F1EC5D004FDC8F /* AddressSelected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSelected.m; sourceTree = "<group>"; };
-		E45E765D151C5042009D1746 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		E45E7660151C504B009D1746 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E45E7662151C50B5009D1746 /* AudioRecorderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecorderController.h; sourceTree = "<group>"; };
 		E45E7663151C50B5009D1746 /* AudioRecorderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecorderController.m; sourceTree = "<group>"; };
 		E45E7665151C5392009D1746 /* NSTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerController.h; sourceTree = "<group>"; };
@@ -146,14 +152,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23D3820816DF31FD0090F65F /* CoreAudio.framework in Frameworks */,
+				23D3820616DF31EF0090F65F /* AVFoundation.framework in Frameworks */,
 				E4EBEF7A15878A7D00007671 /* libxml2.dylib in Frameworks */,
 				E4C6EA35155B64C300B202D0 /* Security.framework in Frameworks */,
 				E494C8391537D5B20020FDFB /* libz.dylib in Frameworks */,
 				E494C8351537D5650020FDFB /* MobileCoreServices.framework in Frameworks */,
 				E494C8331537D5560020FDFB /* SystemConfiguration.framework in Frameworks */,
 				E494C8311537D5440020FDFB /* CFNetwork.framework in Frameworks */,
-				E45E7661151C504B009D1746 /* AVFoundation.framework in Frameworks */,
-				E45E765E151C5042009D1746 /* CoreAudio.framework in Frameworks */,
 				E4A3C92614F4E12B00B10EED /* libstdc++.dylib in Frameworks */,
 				E4A0750E14F37049007ECF93 /* CoreLocation.framework in Frameworks */,
 				E4BFDA6F14E89F6D00D39B0C /* AddressBookUI.framework in Frameworks */,
@@ -163,54 +169,54 @@
 				E4ECEA4C14E756C200C0D57F /* UIKit.framework in Frameworks */,
 				E4ECEA4E14E756C200C0D57F /* Foundation.framework in Frameworks */,
 				E4ECEA5014E756C200C0D57F /* CoreGraphics.framework in Frameworks */,
-				234FBFE716A0335500044E84 /* libogg.a in Frameworks */,
-				234FBFE816A0335500044E84 /* libspeex.a in Frameworks */,
-				234FBFE916A0335500044E84 /* libspeexdsp.a in Frameworks */,
+				23D381CC16DF26460090F65F /* libogg.a in Frameworks */,
+				23D381CD16DF26460090F65F /* libspeex.a in Frameworks */,
+				23D381CE16DF26460090F65F /* libspeexdsp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		234FBFD116A0330B00044E84 /* Speex */ = {
+		23D381E516DF26D10090F65F /* speex */ = {
 			isa = PBXGroup;
 			children = (
-				238AB06E16A2A6A50075B0B9 /* SpeexAllHeader.h */,
-				238AB06B16A2A6880075B0B9 /* SpeexCodec.h */,
-				238AB06C16A2A6880075B0B9 /* SpeexCodec.m */,
-				234FBFD316A0333600044E84 /* ogg */,
-				234FBFD716A0333600044E84 /* speex */,
+				23D381E616DF26D10090F65F /* speex.h */,
+				23D381E716DF26D10090F65F /* speex_bits.h */,
+				23D381E816DF26D10090F65F /* speex_buffer.h */,
+				23D381E916DF26D10090F65F /* speex_callbacks.h */,
+				23D381EA16DF26D10090F65F /* speex_config_types.h */,
+				23D381EB16DF26D10090F65F /* speex_echo.h */,
+				23D381EC16DF26D10090F65F /* speex_header.h */,
+				23D381ED16DF26D10090F65F /* speex_jitter.h */,
+				23D381EE16DF26D10090F65F /* speex_preprocess.h */,
+				23D381EF16DF26D10090F65F /* speex_resampler.h */,
+				23D381F016DF26D10090F65F /* speex_stereo.h */,
+				23D381F116DF26D10090F65F /* speex_types.h */,
 			);
-			name = Speex;
+			path = speex;
 			sourceTree = "<group>";
 		};
-		234FBFD316A0333600044E84 /* ogg */ = {
+		23D381F216DF26E10090F65F /* ogg */ = {
 			isa = PBXGroup;
 			children = (
-				234FBFD416A0333600044E84 /* config_types.h */,
-				234FBFD516A0333600044E84 /* ogg.h */,
-				234FBFD616A0333600044E84 /* os_types.h */,
+				23D381F316DF26E10090F65F /* config_types.h */,
+				23D381F416DF26E10090F65F /* ogg.h */,
+				23D381F516DF26E10090F65F /* os_types.h */,
 			);
 			path = ogg;
 			sourceTree = "<group>";
 		};
-		234FBFD716A0333600044E84 /* speex */ = {
+		23D381FD16DF27D20090F65F /* Speex */ = {
 			isa = PBXGroup;
 			children = (
-				234FBFD816A0333600044E84 /* speex.h */,
-				234FBFD916A0333600044E84 /* speex_bits.h */,
-				234FBFDA16A0333600044E84 /* speex_buffer.h */,
-				234FBFDB16A0333600044E84 /* speex_callbacks.h */,
-				234FBFDC16A0333600044E84 /* speex_config_types.h */,
-				234FBFDD16A0333600044E84 /* speex_echo.h */,
-				234FBFDE16A0333600044E84 /* speex_header.h */,
-				234FBFDF16A0333600044E84 /* speex_jitter.h */,
-				234FBFE016A0333600044E84 /* speex_preprocess.h */,
-				234FBFE116A0333600044E84 /* speex_resampler.h */,
-				234FBFE216A0333600044E84 /* speex_stereo.h */,
-				234FBFE316A0333600044E84 /* speex_types.h */,
+				23D3820216DF2CE20090F65F /* SpeexCodec.h */,
+				23D3820316DF2CE20090F65F /* SpeexCodec.m */,
+				23D381F616DF26EF0090F65F /* SpeexAllHeader.h */,
+				23D381F216DF26E10090F65F /* ogg */,
+				23D381E516DF26D10090F65F /* speex */,
 			);
-			path = speex;
+			name = Speex;
 			sourceTree = "<group>";
 		};
 		E494C7E1153717D70020FDFB /* WebService */ = {
@@ -272,6 +278,8 @@
 		E4ECEA3C14E756C100C0D57F = {
 			isa = PBXGroup;
 			children = (
+				23D3820716DF31FD0090F65F /* CoreAudio.framework */,
+				23D3820516DF31EE0090F65F /* AVFoundation.framework */,
 				E4ECEA5114E756C200C0D57F /* SMS_sos */,
 				E4ECEA4A14E756C200C0D57F /* Frameworks */,
 				E4ECEA4814E756C200C0D57F /* Products */,
@@ -289,17 +297,15 @@
 		E4ECEA4A14E756C200C0D57F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				234FBFE416A0335500044E84 /* libogg.a */,
-				234FBFE516A0335500044E84 /* libspeex.a */,
-				234FBFE616A0335500044E84 /* libspeexdsp.a */,
+				23D381C916DF26460090F65F /* libogg.a */,
+				23D381CA16DF26460090F65F /* libspeex.a */,
+				23D381CB16DF26460090F65F /* libspeexdsp.a */,
 				E4EBEF7915878A7D00007671 /* libxml2.dylib */,
 				E4C6EA34155B64C300B202D0 /* Security.framework */,
 				E494C8381537D5B20020FDFB /* libz.dylib */,
 				E494C8341537D5650020FDFB /* MobileCoreServices.framework */,
 				E494C8321537D5560020FDFB /* SystemConfiguration.framework */,
 				E494C8301537D5440020FDFB /* CFNetwork.framework */,
-				E45E7660151C504B009D1746 /* AVFoundation.framework */,
-				E45E765D151C5042009D1746 /* CoreAudio.framework */,
 				E4A3C92414F4E11A00B10EED /* libstdc++.dylib */,
 				E4A0750B14F3701F007ECF93 /* CoreLocation.framework */,
 				E4BFDA6E14E89F6D00D39B0C /* AddressBookUI.framework */,
@@ -316,7 +322,7 @@
 		E4ECEA5114E756C200C0D57F /* SMS_sos */ = {
 			isa = PBXGroup;
 			children = (
-				234FBFD116A0330B00044E84 /* Speex */,
+				23D381FD16DF27D20090F65F /* Speex */,
 				E4EBEF7F1587988000007671 /* BASE64 */,
 				E494C7E1153717D70020FDFB /* WebService */,
 				E45E7665151C5392009D1746 /* NSTimerController.h */,
@@ -340,6 +346,9 @@
 		E4ECEA5214E756C200C0D57F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				23D3818116DE02B50090F65F /* audio.png */,
+				23D3818216DE02B50090F65F /* loc upload.png */,
+				23D3817F16DE00BE0090F65F /* test.caf */,
 				230F193316B22565003B64B5 /* Pin location 128x128.png */,
 				23AFC0EB16AFDAE400174BE8 /* Locate 128x128.png */,
 				E47B281B1588C3750034D187 /* icon.png */,
@@ -410,6 +419,9 @@
 				E47B281C1588C3750034D187 /* icon.png in Resources */,
 				23AFC0EC16AFDAE400174BE8 /* Locate 128x128.png in Resources */,
 				230F193416B22565003B64B5 /* Pin location 128x128.png in Resources */,
+				23D3818016DE00BE0090F65F /* test.caf in Resources */,
+				23D3818316DE02B50090F65F /* audio.png in Resources */,
+				23D3818416DE02B50090F65F /* loc upload.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +466,7 @@
 				E4EBEF6B1587881F00007671 /* ASINetworkQueue.m in Sources */,
 				E4EBEF70158788EE00007671 /* Reachability.m in Sources */,
 				E4EBEF82158798AF00007671 /* Base64.m in Sources */,
-				238AB06D16A2A6880075B0B9 /* SpeexCodec.m in Sources */,
+				23D3820416DF2CE20090F65F /* SpeexCodec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,12 +555,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/SMS_sos\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../speexLibrary/TEST_Speex_001\"",
 				);
 				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = "";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"/Users/guzhe/Desktop/Code/code/SMS_sos/SMS_sos\"";
+				VALID_ARCHS = "armv6 armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -571,12 +585,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/SMS_sos\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../speexLibrary/TEST_Speex_001\"",
 				);
 				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = "";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "armv6 armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
